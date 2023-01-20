@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Zoo Manager</title>
+  <link rel="stylesheet" type="text/css" href="Zoo2.css">
+</head>
+
+<body>
+  <header>
+    <h1>Zoo Manager</h1>
+  </header>
+
+  <main>
+    <div class="tabs">
+      <button class="tab-button" id="manager-tab-button">Manager</button>
+      <button class="tab-button" id="email-tab-button">Email</button>
+      <button class="tab-button" id="upgrades-tab-button">Upgrades</button>
+    </div>
+
+    <div class="tab-content">
+      <div class="tab" id="manager-tab">
+        <p>Money: <span id="money-counter">$0</span></p>
+        <button id="sell-tickets-button">Sell Tickets</button>
+      </div>
+
+      <div class="tab" id="email-tab">
+        <table>
+          <thead>
+            <tr>
+              <th>From</th>
+              <th>Subject</th>
+            </tr>
+          </thead>
+          <tbody id="email-list">
+            <!-- emails will be added here -->
+          </tbody>
+        </table>
+      </div>
+
+      <div class="tab" id="upgrades-tab">
+        <ul id="upgrade-list">
+          <!-- upgrades will be added here -->
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Copyright © 2023 Zoo Manager Inc.</p>
+  </footer>
+
+</body>
+
+</html>
+<script type="text/javascript" src="Zoo2.js"></script>
